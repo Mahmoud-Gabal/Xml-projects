@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+    <item android:title="Picture 1" android:id="@+id/pic1"/>
+    <item android:title="Picture 2" android:id="@+id/pic2"/>
+    <item android:title="Picture 3" android:id="@+id/pic3"/>
+    <item android:title="Picture 4" android:id="@+id/pic4"/>
+    <item android:title="Picture 5" android:id="@+id/pic5"/>
+    <item android:title="Picture 6" android:id="@+id/pic6"/>
+    <item android:title="Picture 7" android:id="@+id/pic7"/>
+    <item android:title="Picture 8" android:id="@+id/pic8"/>
+    <item android:title="Picture 9" android:id="@+id/pic9"/>
+    <item android:title="Picture 10" android:id="@+id/pic10"/>
+</menu>

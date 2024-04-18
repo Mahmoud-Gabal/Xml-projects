@@ -1,0 +1,15 @@
+        val imageview = findViewById<ImageView>(R.id.ivphoto)
+        val button_upload = findViewById<Button>(R.id.btnupload)
+        val gallery_launcher = registerForActivityResult(ActivityResultContracts.GetContent(),
+            ActivityResultCallback {
+                imageview.setImageURI(it)
+            })
+        button_upload.setOnClickListener {
+            gallery_launcher.launch("image/*")
+        }
+
+
+
+--------------------------------------------------------
+
+link of solution --> https://www.google.com/search?q=startactivityforresult+in+android+not+working+kotlin&oq=start&gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIICAEQRRgnGDsyCQgCEEUYORiABDINCAMQLhiDARixAxiABDIQCAQQABiDARixAxiABBiKBTIQCAUQLhjHARixAxjRAxiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCTM5ODJqMGoxNagCALACAA&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:b3355c5c,vid:sjmVajI1zsY,st:0

@@ -1,0 +1,4 @@
+
+----> we use interfaces between fragments to implement a fun in fragmentA in fragmentB
+
+----> we use navigation controller to navigate between fragments instead of (Intent)

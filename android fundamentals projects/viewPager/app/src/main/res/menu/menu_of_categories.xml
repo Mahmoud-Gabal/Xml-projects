@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_category_1"
+        android:title="First Category"
+        android:id="@+id/firstCatId"/>
+    <item
+        android:icon="@drawable/ic_category_2"
+        android:title="Second Category"
+        android:id="@+id/secondCatId"/>
+    <item
+        android:icon="@drawable/ic_category_3"
+        android:title="Third Category"
+        android:id="@+id/thirdCatId"/>
+</menu>

@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Demoes</string>
+    <string-array name="months">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Abr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+    <string-array name="country">
+        <item>Egypt</item>
+        <item>Sudan</item>
+        <item>America</item>
+        <item>Maly</item>
+        <item>Saudi Arabia</item>
+        <item>Germany</item>
+        <item>Japan</item>
+        <item>Kongho</item>
+        <item>France</item>
+        <item>England</item>
+        <item>Oman</item>
+        <item>Qatar</item>
+    </string-array>
+</resources>

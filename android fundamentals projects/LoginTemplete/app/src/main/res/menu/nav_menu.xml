@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <item android:title="Communication" android:id="@+id/Communication">
+        <menu>
+            <item
+                android:id="@+id/Profile"
+                android:title="Profile"
+                android:icon="@drawable/ic_profile"/>
+            <item
+                android:id="@+id/Friends"
+                android:title="Friends"
+                android:icon="@drawable/friends_880594"/>
+            <item
+                android:title="Groups"
+                android:id="@+id/Groups"
+                android:icon="@drawable/group_744357"/>
+            <item
+                android:id="@+id/Chat"
+                android:title="Chat"
+                android:icon="@drawable/ic_chat"/>
+            <item
+                android:title="Events"
+                android:id="@+id/Events"
+                android:icon="@drawable/calendar_2693494"/>
+
+            <item
+                android:title="Favourites"
+                android:id="@+id/Favourites"
+                android:icon="@drawable/fav"/>
+            <item
+                android:title="Saved"
+                android:id="@+id/Saved"
+                android:icon="@drawable/saved"/>
+        </menu>
+    </item>
+
+    <item android:id="@+id/Settings"  android:title="Settings">
+        <menu>
+            <item
+                android:title="Privacy"
+                android:id="@+id/Privacy"
+                android:icon="@drawable/ic_privacy"/>
+            <item
+                android:title="Help"
+                android:id="@+id/Help"
+                android:icon="@drawable/ic_help"/>
+        </menu>
+    </item>
+    <item android:id="@+id/Account" android:title="Account">
+        <menu>
+            <item
+                android:title="Log out"
+                android:id="@+id/Logout"
+                android:icon="@drawable/ic_logout"/>
+
+        </menu>
+    </item>
+
+</menu>

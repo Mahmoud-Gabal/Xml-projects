@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Login Templete</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string-array name="numcode">
+        <item>+91</item>
+        <item>+20</item>
+        <item>+31</item>
+        <item>+45</item>
+        <item>+233</item>
+    </string-array>
+    <string name="default_web_client_id">354055436571-jkhis7r1o35hah8bq9mppbshku72ekv4.apps.googleusercontent.com</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Category One"
+        android:id="@+id/catOneId"/>
+    <item
+        android:title="Category Two"
+        android:id="@+id/catTwoId"/>
+    <item
+        android:title="Category Three"
+        android:id="@+id/catThreeId"/>
+</menu>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnhobbies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#58AEE1"
+        android:fontFamily="@font/alike_angular"
+        android:paddingLeft="10sp"
+        android:paddingTop="20sp"
+        android:paddingRight="10sp"
+        android:paddingBottom="20sp"
+        android:text="select hobbies"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editphone"
+        app:layout_constraintTop_toBottomOf="@+id/editemail" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="60sp"
+        android:background="#CFCCCC"
+        android:fontFamily="@font/alike_angular"
+        android:gravity="center"
+        android:text="Form"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editfirstname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="text"
+        app:layout_constraintEnd_toStartOf="@+id/editlastname"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editlastname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editfirstname"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Spinner
+        android:id="@+id/scountry"
+        android:layout_width="140sp"
+        android:layout_height="40sp"
+        android:layout_marginStart="100dp"
+        android:entries="@array/country"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editfirstname" />
+
+    <TextView
+        android:id="@+id/textcountry"
+        android:layout_width="100sp"
+        android:layout_height="40sp"
+        android:fontFamily="@font/alike_angular"
+        android:gravity="center"
+        android:text="Country : "
+        android:textColor="#000000"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toStartOf="@+id/scountry"
+        app:layout_constraintTop_toBottomOf="@+id/editfirstname" />
+
+    <Spinner
+        android:id="@+id/sday"
+        android:layout_width="0dp"
+        android:layout_height="40sp"
+        app:layout_constraintEnd_toStartOf="@+id/smonths"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textday"
+        app:layout_constraintTop_toBottomOf="@+id/scountry" />
+
+    <TextView
+        android:id="@+id/textday"
+        android:layout_width="100sp"
+        android:layout_height="40sp"
+        android:fontFamily="@font/alike_angular"
+        android:gravity="center"
+        android:text="Birth Day : "
+        android:textColor="#000000"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textcountry" />
+
+    <Spinner
+        android:id="@+id/smonths"
+        android:layout_width="0dp"
+        android:layout_height="40sp"
+        android:entries="@array/months"
+        app:layout_constraintEnd_toStartOf="@+id/syear"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/sday"
+        app:layout_constraintTop_toBottomOf="@+id/scountry" />
+
+    <Spinner
+        android:id="@+id/syear"
+        android:layout_width="0dp"
+        android:layout_height="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/smonths"
+        app:layout_constraintTop_toBottomOf="@+id/scountry" />
+
+    <EditText
+        android:id="@+id/editaddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textday" />
+
+    <EditText
+        android:id="@+id/editemail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editaddress" />
+
+    <EditText
+        android:id="@+id/editphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editemail" />
+
+    <EditText
+        android:id="@+id/editfaculty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Faculty"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editphone" />
+
+    <Button
+        android:id="@+id/btnapply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#58AEE1"
+        android:fontFamily="@font/alike_angular"
+        android:paddingLeft="10sp"
+        android:paddingTop="20sp"
+        android:paddingRight="10sp"
+        android:paddingBottom="20sp"
+        android:text="Apply"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnhobbies" />
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnapply" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

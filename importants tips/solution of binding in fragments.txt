@@ -1,0 +1,9 @@
+   private lateinit var binding : FragmentFirstBinding
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        binding = FragmentFirstBinding.inflate(inflater,container,false)
+        return binding.root
+    }

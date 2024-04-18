@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC107"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/headtxt"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:fontFamily="@font/bungee"
+        android:gravity="center"
+        android:text="Select for your burger,Mr :-"
+        android:textColor="#8A3B22"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headtxt">
+
+        <RadioButton
+            android:id="@+id/beefid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="15sp"
+            android:text="Beef"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/chickenid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="15sp"
+            android:text="Chicken"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/porkid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="15sp"
+            android:text="Pork"
+            android:textSize="25sp" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checksalad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15sp"
+        android:paddingTop="15sp"
+        android:paddingRight="15sp"
+        android:paddingBottom="15sp"
+        android:text="Salad"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <CheckBox
+        android:id="@+id/checkcheese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15sp"
+        android:paddingRight="15sp"
+        android:paddingBottom="15sp"
+        android:text="Cheese"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checksalad" />
+
+    <CheckBox
+        android:id="@+id/checkonions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15sp"
+        android:paddingRight="15sp"
+        android:paddingBottom="15sp"
+        android:text="Onions"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkcheese" />
+
+    <TextView
+        android:id="@+id/textnum"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:gravity="center"
+        android:text="N of orders :  0"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkonions" />
+
+    <Button
+        android:id="@+id/btnminus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#787270"
+        android:text="-"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnplus"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textnum" />
+
+    <Button
+        android:id="@+id/btnplus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#787270"
+        android:text="+"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnminus"
+        app:layout_constraintTop_toBottomOf="@+id/textnum" />
+
+    <TextView
+        android:id="@+id/textorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="your ordrer is :"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnminus" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/border"
+        android:fontFamily="@font/bungee"
+        android:text="add order"
+        android:textColor="#8A3B22"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toStartOf="@+id/buy"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textorder" />
+
+    <Button
+        android:id="@+id/buy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/border"
+        android:fontFamily="@font/bungee"
+        android:text="buy"
+        android:textColor="#8A3B22"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/add"
+        app:layout_constraintTop_toBottomOf="@+id/textorder" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="200sp"
+        android:layout_height="150sp"
+        android:layout_marginEnd="40dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/burger2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

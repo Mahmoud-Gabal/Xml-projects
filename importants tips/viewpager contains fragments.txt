@@ -1,0 +1,24 @@
+
+1/ make viewpager in main activity
+
+2/ do noooooooooooooot make viewpager_item layout  ...
+
+3/ make this viewpager_adapter :-
+
+class ViewPagerAdapter(val list : MutableList<Fragment>,val activity:AppCompatActivity )
+    :FragmentStateAdapter(activity){
+    override fun getItemCount(): Int {
+        return list.size
+    }
+
+    override fun createFragment(position: Int): Fragment {
+        return list[position]
+    }
+}
+
+
+4/ in MainActivity :
+
+	val list = mutablelistof<Fragment>(FirstFragment(),SecondFragment())
+	val adapter = ViewPagerAdapter(list,this)
+	binding.viwePagerId.adapter = adapter

@@ -1,0 +1,13 @@
+ we can go back from the current page to the last one on our app using :
+
+(Android Gisture)  :-
+
+1/ go to Settings 
+
+2/ System Sytting
+
+3/ Gistures
+
+4/ System Navigation
+
+5/ Gisture Navigation
